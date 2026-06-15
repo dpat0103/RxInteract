@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16
+    container_name: drug_api_db
+    environment:
+      POSTGRES_USER: drug_user
+      POSTGRES_PASSWORD: drug_pass
+      POSTGRES_DB: drug_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

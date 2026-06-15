@@ -1,0 +1,1 @@
+DATABASE_URL=postgresql+asyncpg://drug_user:drug_pass@localhost:5432/drug_db
